@@ -8,7 +8,10 @@
   padding: 0.5rem 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   border-bottom: 3px solid var(--museum-moss-green);
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
   z-index: 1000;
 }
 
@@ -117,6 +120,10 @@
     align-items: center;
     justify-content: flex-start;
     gap: 0.5rem;
+  }
+  /* Garante que o conteúdo não fique escondido atrás do header fixo */
+  body, .main-container, .home-page, .obras-page {
+    padding-top: 110px !important;
   }
   .header-logo {
     flex: 0 0 auto;
