@@ -130,6 +130,10 @@
     margin: 0 auto;
     display: block;
   }
+  /* Esconde o logo no mobile */
+  .header-logo {
+    display: none;
+  }
   .header-nav {
     position: static;
     background: none;
