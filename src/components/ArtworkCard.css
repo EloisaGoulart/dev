@@ -17,6 +17,14 @@
   position: relative;
 }
 
+/* Diminui a largura dos cards apenas em telas pequenas (mobile) */
+@media (max-width: 600px) {
+  .artwork-card {
+    max-width: 90vw;
+    min-width: 0;
+  }
+}
+
 .artwork-card::before {
   content: '';
   position: absolute;
